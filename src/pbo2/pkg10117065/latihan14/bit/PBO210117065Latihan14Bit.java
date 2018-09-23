@@ -13,7 +13,7 @@ public class PBO210117065Latihan14Bit {
     public static void main(String[] args) {
         // deklarasi variabel
         int a = 60; // 60 = 0011 1100
-        int b = 13; // 60 = 0000 1101
+        int b = 13; // 13 = 0000 1101
         int c = 0;
                 
         c = a & b;
@@ -29,20 +29,16 @@ public class PBO210117065Latihan14Bit {
         System.out.println("a ^ b = " + c);
         
         c = ~a;
-        // -61 = 1100 0011 ||  	Manipulasi bit dengan logika NOT
+        // *perhitungan tersendiri ||  	Manipulasi bit dengan logika NOT
         System.out.println("~a = " + c);
-        // ~(n) = – (n+1), contoh: ~(60) = -61
-        
-        c = a;
-        // -61 = 1100 0011
-        System.out.println("a = " + c);
+        // Rumusnya:  ~(n) = – (n+1), contoh: ~(60) = -61
         
         c = a << 2;
-        // -61 = 1100 0011 || Pergeseran bit ke kiri
+        // 60 = 0011 1100 -> 1111 0000 = 240 || Pergeseran bit ke kiri
         System.out.println("a << 2 = " + c);
         
         c = a >> 2;
-        // -61 = 1100 0011 || Pergeseran bit ke kanan
+        // 61 = 0011 1100 -> 0000 1111 = 15 || Pergeseran bit ke kanan
         System.out.println("a >> 2 = " + c);
     }
     
